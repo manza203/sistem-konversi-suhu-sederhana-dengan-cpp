@@ -43,7 +43,7 @@ do{
                 break;
             case 3:
                 cout << "nilai suhu anda dalam satuan celcius adalah " << suhu << endl;
-                fahrenheit = ((9/5) * suhu) + 32;
+                fahrenheit = ((9.0/5) * suhu) + 32;
                 cout << "hasil konversi suhu ke fahrenheit adalah " << fahrenheit << " F" << endl <<endl;
                 break;
             default:
@@ -67,17 +67,17 @@ do{
           switch (opsi){
             case 1:
                 cout << "nilai suhu anda dalam satuan reamur adalah " << suhu << endl;
-                celcius = (5/4) * suhu;
+                celcius = (5.0/4) * suhu;
                 cout << "hasil konversi suhu ke celcius adalah " << celcius << endl << endl;
                 break;
             case 2:
                 cout << "nilai suhu anda dalam satuan reamur adalah " << suhu << endl;
-                kelvin = ((5/4) * suhu) + 273.15;
+                kelvin = ((5.0/4) * suhu) + 273.15;
                 cout << "hasil konversi suhu ke kelvin adalah " << kelvin << endl << endl;
                 break;
             case 3:
                 cout << "nilai suhu anda dalam satuan reamur adalah " << suhu << endl;
-                fahrenheit = ((9/4) * suhu) + 32;
+                fahrenheit = ((9.0/4) * suhu) + 32;
                 cout << "hasil konversi suhu ke fahrenheit adalah " << fahrenheit << endl << endl;
                 break;
             default:
@@ -106,12 +106,12 @@ do{
                 break;
             case 2:
                 cout << "nilai suhu anda dalam satuan kelvin adalah " << suhu << endl;
-                reamur = (4/5) * (suhu - 273.15);
-                cout << "hasil konversi suhu ke reamur adalah " << kelvin << endl << endl;
+                reamur = (4.0/5) * (suhu - 273.15);
+                cout << "hasil konversi suhu ke reamur adalah " << reamur << endl << endl;
                 break;
             case 3:
                 cout << "nilai suhu anda dalam satuan kelvin adalah " << suhu << endl;
-                fahrenheit = ((9/5) * (suhu - 273.15)) + 32;
+                fahrenheit = ((9.0/5) * (suhu - 273.15)) + 32;
                 cout << "hasil konversi suhu ke fahrenheit adalah " << fahrenheit << endl << endl;
                 break;
             default:
@@ -135,18 +135,18 @@ do{
           switch (opsi){
             case 1:
                 cout << "nilai suhu anda dalam satuan fahrenheit adalah " << suhu << endl << endl;
-                celcius = (5/9) * (suhu - 32);
+                celcius = (5.0/9) * (suhu - 32);
                 cout << "hasil konversi suhu ke celcius adalah " << celcius << endl;
                 break;
             case 2:
                 cout << "nilai suhu anda dalam satuan fahrenheit adalah " << suhu << endl;
-                reamur = (4/9) * (suhu-32);
-                cout << "hasil konversi suhu ke reamur adalah " << kelvin << endl << endl;
+                reamur = (4.0/9) * (suhu-32);
+                cout << "hasil konversi suhu ke reamur adalah " << reamur << endl << endl;
                 break;
             case 3:
                 cout << "nilai suhu anda dalam satuan fahrenheit adalah " << suhu << endl;
-                kelvin = ((5/9) * (suhu-32)) + 273.15;
-                cout << "hasil konversi suhu ke kelvin adalah " << fahrenheit << endl << endl;
+                kelvin = ((5.0/9) * (suhu-32)) + 273.15;
+                cout << "hasil konversi suhu ke kelvin adalah " << kelvin << endl << endl;
                 break;
             default:
                 cout << "masukkan opsi yang sesuai" << endl << endl;
@@ -154,6 +154,9 @@ do{
           }
         }while(!(opsi <= 3 && opsi >= 1));
         break;
+      default:
+            cout << "\npilihan tidak tersedia " << endl;
+            cout << "masukkan pilihan sesuai ketentuan (1-5)" << endl << endl;
   }
 }while(pilihan != 5);
 cout << "================================================" << endl;
